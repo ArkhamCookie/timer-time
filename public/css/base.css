@@ -3,7 +3,7 @@
 	--_w: 88cqi;
 	--_r: calc((var(--_w) - var(--_sz)) / 2);
 	--_sz: 12cqi;
-	
+
 	background: #222;
 	block-size: var(--_ow);
 	border-radius: 24%;
@@ -41,18 +41,18 @@
 	width: var(--_sz);
 }
 
-.clock-face time:nth-child(1) { --_d: 270deg; } 
-.clock-face time:nth-child(2) { --_d: 300deg; } 
-.clock-face time:nth-child(3) { --_d: 330deg; } 
-.clock-face time:nth-child(4) { --_d: 0deg; } 
-.clock-face time:nth-child(5) { --_d: 30deg; } 
-.clock-face time:nth-child(6) { --_d: 60deg; } 
-.clock-face time:nth-child(7) { --_d: 90deg; } 
-.clock-face time:nth-child(8) { --_d: 120deg; } 
-.clock-face time:nth-child(9) { --_d: 150deg; } 
-.clock-face time:nth-child(10) { --_d: 180deg; } 
-.clock-face time:nth-child(11) { --_d: 210deg; } 
-.clock-face time:nth-child(12) { --_d: 240deg; } 
+.clock-face time:nth-child(1) { --_d: 270deg; }
+.clock-face time:nth-child(2) { --_d: 300deg; }
+.clock-face time:nth-child(3) { --_d: 330deg; }
+.clock-face time:nth-child(4) { --_d: 0deg; }
+.clock-face time:nth-child(5) { --_d: 30deg; }
+.clock-face time:nth-child(6) { --_d: 60deg; }
+.clock-face time:nth-child(7) { --_d: 90deg; }
+.clock-face time:nth-child(8) { --_d: 120deg; }
+.clock-face time:nth-child(9) { --_d: 150deg; }
+.clock-face time:nth-child(10) { --_d: 180deg; }
+.clock-face time:nth-child(11) { --_d: 210deg; }
+.clock-face time:nth-child(12) { --_d: 240deg; }
 
 .arm {
 	background-color: var(--_abg);
@@ -69,10 +69,10 @@
 
 
 .seconds {
-	--_abg: rgb(255, 140, 5);
+	--_abg: rgb(255, 0, 0);
 	--_ah: 40cqi;
 	--_aw: 1cqi;
-	
+
 	animation: turn 60s linear infinite;
 	animation-delay: var(--_ds, 0ms);
 }
