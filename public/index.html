@@ -6,35 +6,33 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<!-- <link href="/public/assets/favicon.ico" rel="icon" type="image/x-icon"/> -->
+	<link href="/public/assets/favicon.ico" rel="icon" type="image/x-icon" />
 	<title>Timer Time</title>
 	<meta name="description" content="">
 
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss/build/pure-min.css"/>
-	<!-- <link rel="stylesheet" href="/node_modules/purecss/build/pure-min.css"/> -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
 	<link rel="stylesheet" type="text/css" href="/public/css/home.css"/>
 </head>
 
 </html>
 <body>
 
-<div class="header">
-	<div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
-		<a class="pure-menu-heading" href="./index.html">Timer Time</a>
+<script src="/public/js/nav.js"></script>
 
-		<ul class="pure-menu-list">
-			<li class="pure-menu-item pure-menu-selected"><a href="./index.html" class="pure-menu-link">Home</a></li>
-			<li class="pure-menu-item"><a href="./base.html" class="pure-menu-link">Analog Clock</a></li>
-			<li class="pure-menu-item"><a href="" class="pure-menu-link">Hourglass</a></li>
-		</ul>
+<div id="nav" class="nav">
+	<a href="javascript:void(0)" class="btn nav-closebth" onclick="closeNav()">&times;</a>
+	<a href="./base.html">Base</a>
+	<a href="./hourglass.html">Hourglass</a>
+	<a href="#">:D</a>
 
-	</div>
 </div>
 
-<!-- <header class="header">
-	<div class="content">
-		<h1 class="heading">Timer Time!</h1>
-	</div>
-</header> -->
+<button onclick="openNav()">
+	<i class="bi bi-clock" style="font-size: 4rem;"></i>
+</button>
+
+<div id="main">
+
+</div>
 
 </body>

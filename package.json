@@ -2,7 +2,7 @@
 	"name": "timer-time",
 	"version": "1.0.0",
 	"description": "A repo for messing around with various clocks and timers.",
-	"main": "/public/js/server.js",
+	"main": "/server.js",
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/ArkhamCookie/timer-time"
@@ -37,6 +37,6 @@
 	},
 	"dependencies": {
 		"express": "^4.18.2",
-		"purecss": "^3.0.0"
+		"express-fileupload": "^1.4.0"
 	}
 }
