@@ -1,0 +1,39 @@
+{
+	"name": "timer-time",
+	"version": "1.0.0",
+	"description": "A repo for messing around with various clocks and timers.",
+	"main": "server.js",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/ArkhamCookie/timer-time"
+	},
+	"keywords": [
+		"time",
+		"timer",
+		"clock"
+	],
+	"author": {
+		"name": "ArkhamCookie",
+		"email": "npm@mail.theuntitledproject.dev",
+		"url": "https://theuntitledproject.dev"
+	},
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/ArkhamCookie/timer-time/issues"
+	},
+	"homepage": "https://theuntitledproject.dev/timer-time",
+	"scripts": {
+		"lint": "eslint /public/js/*.js",
+	},
+	"devDependencies": {
+		"eslint": "^8.40.0",
+		"eslint-config-standard": "^17.0.0",
+		"eslint-plugin-import": "^2.27.5",
+		"eslint-plugin-n": "^15.7.0",
+		"eslint-plugin-promise": "^6.1.1",
+	},
+	"dependencies": {
+		"express": "^4.18.2",
+		"express-fileupload": "^1.4.0"
+	}
+}
