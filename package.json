@@ -23,14 +23,14 @@
 	},
 	"homepage": "https://theuntitledproject.dev/timer-time",
 	"scripts": {
-		"lint": "eslint /public/js/*.js",
+		"lint": "eslint /public/js/*.js"
 	},
 	"devDependencies": {
 		"eslint": "^8.40.0",
 		"eslint-config-standard": "^17.0.0",
 		"eslint-plugin-import": "^2.27.5",
 		"eslint-plugin-n": "^15.7.0",
-		"eslint-plugin-promise": "^6.1.1",
+		"eslint-plugin-promise": "^6.1.1"
 	},
 	"dependencies": {
 		"express": "^4.18.2",
