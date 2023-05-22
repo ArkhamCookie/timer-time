@@ -1,28 +1,18 @@
-/* eslint-disable no-undef */
-import { serve } from 'https://deno.land/std/http/mod.ts'
+const express = require('express')
+const path = require('path')
+const fileupload = require('express-fileupload')
 
-const BASE_PATH = './public'
+const app = express()
+const port = 3000
 
-const reqHandler = async(req) => {
-	const filePath = BASE_PATH + new URL(req.url).pathname
-	let fileSize
+express.static('/public')
+app.use(express.static('public'))
 
-	try {
-		fileSize = (await Deno.stat(filePath)).size
-	} catch (err) {
-		if (err instanceof Deno.errors.NotFound) {
-			return new Response(null, { status: 404 })
-		}
-		return new Response(null, { status: 500 })
-	}
+let initialPath = path.join(__dirname, 'public')
 
-	const body = (await Deno.open(filePath)).readable
-	return new Response(body)
-}
+app.use('/public', express.static('public'))
+app.use(fileupload())
 
-serve(reqHandler, { port: 8080 })
-
-/*
 app.get('/', (req, res) => {
 	res.sendFile(path.join(__dirname, 'index.html'))
 })
@@ -30,4 +20,3 @@ app.get('/', (req, res) => {
 app.listen(port, () => {
 	console.log('Listening on ' + port + '...')
 })
-*/
