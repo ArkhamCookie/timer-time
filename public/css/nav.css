@@ -1,4 +1,11 @@
-.nav {
+/* Navigation */
+/* .nav-icon {
+	width: 1em;
+	height: 1em;
+	vertical-align: -.125em;
+} */
+
+.sidenav {
 	height: 100%;
 	width: 0;
 	position: fixed;
@@ -11,7 +18,7 @@
 	transition: 0.5s;
 }
 
-.nav a {
+.sidenav a {
 	padding: 8px 8px 8px 32px;
 	text-decoration: none;
 	font-size: 25px;
@@ -20,11 +27,11 @@
 	transition: 0.3s;
 }
 
-.nav a:hover {
+.sidenav a:hover {
 	background-color: #f1f1f1;
 }
 
-.nav .nav-closebtn {
+.sidenav .sidenav-closebtn {
 	position: absolute;
 	top: 0;
 	right: 25px;
@@ -32,7 +39,7 @@
 	margin-left: 50px;
 }
 
-.nav-open {
+.sidenav-open {
 	background-color: #fff;
 	border: #111;
 	border-radius: 50%;
